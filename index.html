@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <div id="root"></div>
     </body>
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
     <script>
-
+        const root = document.getElementById("root");
+        const span = React.createElement("span", { id:"sexy-span" }, "Hello I am span");
+        ReactDOM.render(span, root); /*render : React element를 가지고 HTML로 만들어 배치한다는 의미*/
     </script>
 </html>
